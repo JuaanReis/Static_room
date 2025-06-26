@@ -8,7 +8,7 @@
 |------------------------------|----------------------------------------------|
 | Feeling inspired?            | Make an image that shows your emotions       |
 | Got an idea?                 | Share it in the chat and take it forward     |
-| Bored but it’s daytime?      | Wait it out, the best shows only air at night |
+| Bored but it’s daytime?      | Wait, the best shows only air after midnight |
 
 ---
 
