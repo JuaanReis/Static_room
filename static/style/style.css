@@ -1,0 +1,168 @@
+/*=========================== GLOBAL ===========================*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --back: #121212;
+  --fnt: #cecece;
+  --ab: #000;
+  --accent: #363636; /* verde para botões e highlights */
+}
+/*=========================== GLOBAL ===========================*/
+
+/*=========================== HEADER ===========================*/
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--ab);
+  text-align: center;
+}
+header .txt h1 {
+  font-size: 3em;
+  color: var(--fnt);
+  font-weight: 900;
+  letter-spacing: 2px;
+  user-select: none;
+}
+/*=========================== HEADER ===========================*/
+
+/*=========================== HOME ===========================*/
+.home {
+  display: flex;
+  height: calc(100vh - 80px); /* menos header */
+  background-color: var(--back);
+  color: var(--fnt);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* TEXTO + IMAGEM */
+.content article.txt {
+  flex: 3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--back);
+  border-right: 2px solid #222;
+}
+
+.content article.txt .banner p {
+  font-size: 1.4em;
+  color: var(--fnt);
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.content article.txt .images {
+  display: flex;
+  gap: 15px;
+}
+
+.content article.txt .images .item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content article.txt .images .item p {
+  font-size: 0.75em;
+  color: var(--fnt);
+  margin-top: 5px;
+  user-select: none;
+}
+
+.content article.txt .images .item img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #222;
+  user-select: none;
+}
+
+/* CHAT */
+aside.chat {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  border-left: 2px solid #222;
+  padding: 20px;
+  color: var(--fnt);
+}
+
+.chat-header h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  user-select: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  user-select: text;
+}
+
+.chat-messages p {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  box-shadow: inset 0 0 5px #000;
+  word-wrap: break-word;
+}
+
+.chat-form {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.chat-form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: var(--fnt);
+  font-size: 1em;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.chat-form input[type="text"]:focus {
+  background-color: #444;
+}
+
+.chat-form button {
+  background-color: var(--accent);
+  color: var(--ab);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-form button:hover {
+  background-color: #141414;
+}
+/*=========================== HOME ===========================*/
